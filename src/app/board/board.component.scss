@@ -1,0 +1,12 @@
+.board{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    max-height: calc(100vh - 80px);
+    app-card {
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+}
