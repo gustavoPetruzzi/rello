@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BoardSandbox } from '../rello.sandbox';
 
 @Component({
   selector: 'app-board',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoardComponent implements OnInit {
 
-  constructor() { }
+  constructor(public boardSandbox: BoardSandbox) { }
 
   ngOnInit(): void {
+    this.boardSandbox.cards$.subscribe(cards =>{
+      console.log(cards);
+    })
   }
 
 }
