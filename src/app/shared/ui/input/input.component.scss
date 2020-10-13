@@ -4,9 +4,9 @@ $white: #fff;
 $gray: #9b9b9b;
 .form__group {
   position: relative;
-  padding: 15px 0 0;
+  padding: 1rem;
   margin-top: 10px;
-  width: 50%;
+  width: calc(100% - 2rem);
 }
 
 .form__field {

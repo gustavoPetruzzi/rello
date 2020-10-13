@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InputComponent } from './ui/input/input.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ButtonComponent } from './ui/button/button.component';
 
 @NgModule({
     declarations: [
-        InputComponent
+        InputComponent,
+        ButtonComponent
     ],
     imports: [
         CommonModule,
@@ -14,7 +16,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     exports: [
         InputComponent,
         CommonModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        ButtonComponent
     ]
 })
 

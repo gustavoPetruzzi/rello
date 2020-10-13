@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators, FormBuilder} from '@angular/forms';
+import { FormGroup, Validators, FormBuilder} from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -9,7 +10,7 @@ import { FormGroup, FormControl, Validators, FormBuilder} from '@angular/forms';
 export class SignupComponent implements OnInit {
 
   signupForm: FormGroup;
-  constructor(fb: FormBuilder) {
+  constructor(fb: FormBuilder, private router: Router) {
     this.signupForm = fb.group({
       email : [null, [Validators.required, Validators.email]],
       password : [null, [Validators.required]],
@@ -19,6 +20,11 @@ export class SignupComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+  signUp(){
+    // todo implement signup
+    console.log('signUp');
+    this.router.navigateByUrl('/login');
   }
 
 }
