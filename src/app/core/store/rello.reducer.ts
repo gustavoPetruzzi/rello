@@ -1,6 +1,6 @@
 import { createReducer, on, createSelector, createFeatureSelector } from '@ngrx/store';
 import { getCards, addCard, removeCard, updateCard } from './rello.actions';
-import { Card } from '../models/card';
+import { Card } from '../../models/card';
 import { mockedCards } from './cards.mocks';
 export interface BoardState{
     cards: Card[];

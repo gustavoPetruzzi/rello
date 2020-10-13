@@ -1,5 +1,5 @@
 import {createAction, props} from '@ngrx/store';
-import { Card } from '../models/card';
+import { Card } from '../../models/card';
 
 export const getCards = createAction('[Board component] Get Cards');
 export const addCard = createAction('[Board component] Add Card', props<{newCard: Card}>());

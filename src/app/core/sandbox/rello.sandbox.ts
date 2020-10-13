@@ -1,9 +1,11 @@
 import { select, Store } from '@ngrx/store';
-import { selectCards, BoardState } from './store/rello.reducer';
-import { addCard, getCards, updateCard, removeCard } from './store/rello.actions';
+import { selectCards, BoardState } from '../store/rello.reducer';
+// import { addCard, getCards, updateCard, removeCard } from '../store/rello.actions';
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({
+    providedIn: 'root',
+})
 
 export class BoardSandbox {
     cards$ = this.boardState$.pipe(

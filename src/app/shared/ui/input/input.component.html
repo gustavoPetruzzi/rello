@@ -1,0 +1,12 @@
+<div class="form__group field">
+    <input
+        class="form__field"
+        [value]="value"
+        [disabled]="isDisabled"
+        [type]="type"
+        (input)="onInput($event.target.value)"
+        [id]="label"
+        [placeholder]="label"
+    />
+    <label [for]="label" class="form__label"> {{ label }} </label>
+</div>

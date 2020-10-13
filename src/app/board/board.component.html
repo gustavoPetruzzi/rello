@@ -1,8 +1,0 @@
-<div class="board">
-    <app-card *ngFor="let card of boardSandbox.cards$ | async; let i = index" >
-        {{ card.title }}
-        <p *ngIf="i === (boardSandbox.cards$ |async).length -1" >
-            + add a new card
-        </p>
-    </app-card>
-</div>

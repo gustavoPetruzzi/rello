@@ -1,0 +1,8 @@
+<div class="board">
+    <app-card *ngFor="let card of cards; let i = index" >
+        {{ card.title }}
+        <p *ngIf="i === cards.length -1" >
+            + add a new card
+        </p>
+    </app-card>
+</div>

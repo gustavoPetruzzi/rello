@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rello"
+    }
+  },
+  "defaultProject": "rello",
+  "cli": {
+    "analytics": false
+  }
 }
