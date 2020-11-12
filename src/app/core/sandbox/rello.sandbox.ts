@@ -14,4 +14,13 @@ export class BoardSandbox {
 
     constructor(private boardState$: Store<BoardState>) {
     }
+
+    /** 
+     * Check if an user is logged in
+     * @return {boolean} return true if User is loggedIn
+     */
+    public isLoggedIn() : boolean{
+        return !localStorage.getItem('token');
+    } 
+
 }

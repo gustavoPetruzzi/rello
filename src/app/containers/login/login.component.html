@@ -1,1 +1,7 @@
-<p>login works!</p>
+<section>
+    <form [formGroup]="loginForm">
+        <app-input type="email" label="Email" formControlName="email"></app-input>
+        <app-input type="password" label="Password" formControlName="password"></app-input>
+        <app-button type="primary" (clickEventEmitter)="login()"> Login</app-button>
+    </form>
+</section>
